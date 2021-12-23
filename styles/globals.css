@@ -1,9 +1,28 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
 body {
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width: 100%;
+  background-image: linear-gradient(90deg, #007cf054, #00dfd865);
+  background-size:cover;
+
+}
+
+::selection {
+  background-color: #bbaa61;
+  color: #171717;
 }
 
 a {
@@ -11,6 +30,3 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}

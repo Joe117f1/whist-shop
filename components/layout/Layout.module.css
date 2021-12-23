@@ -1,0 +1,76 @@
+.main {
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bgcBanner {
+  position: absolute;
+  z-index: -100;
+  height: 850px;
+  width: 100%;
+  background-color: #171717e8;
+}
+
+.bgcElement .bgcElement2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -100;
+}
+
+.bgcElement:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  display: block;
+  z-index: 100;
+  border-left: 350px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-right: 150px solid #171717ce;
+  border-top: 350px solid #171717ce;
+  z-index: -10;
+}
+.bgcElement2:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  display: block;
+  z-index: 100;
+  border-left: 380px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-right: 150px solid #5cadc09c;
+  border-top: 380px solid #5cadc09c;
+  z-index: -10;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    margin: 3rem auto;
+    width: 90%;
+    padding-top: 2rem;
+    margin-top: 4rem;
+  }
+  .bgcElement:before {
+    border-right: 150px solid #171717;
+    border-top: 350px solid #171717;
+    border-left: 1100px solid transparent;
+    border-top: 1100px solid #171717ce;
+  }
+  .bgcElement2:before {
+    border-left: 1600px solid transparent;
+    border-top: 1200px solid #5cadc09c;
+    /* border-top: 1200px solid #1463adda; */
+  }
+}

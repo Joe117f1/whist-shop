@@ -1,0 +1,83 @@
+.grid {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 700px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  min-height: 400px;
+  max-height: 600px;
+  overflow: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control {
+  padding: 10px;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.card .title {
+  width: 90%;
+}
+
+.card h3,
+.row h3 {
+  width: 150px;
+}
+
+.card button {
+  align-self: center;
+}
+
+.control button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #1463ad;
+  border-radius: 4px;
+  margin-left: 1rem;
+  width: 100px;
+}
+
+.control button:hover,
+.control button:active {
+  background-color: #297bc8;
+  border-color: rgb(32, 122, 206);
+  color: white;
+}
+
+.title {
+  min-width: 75px;
+  margin: 12px;
+}
+
+.img {
+  width: 200px;
+  margin: 12px;
+}
+
+.description {
+  margin: 12px;
+  width: 200px;
+}
